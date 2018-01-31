@@ -86,9 +86,6 @@ public class Main {
 					System.out.print("Edad:");
 					int edad_user = Integer.parseInt(scan.nextLine());
 					
-
-					user = new user(nombre,apellido,edad);
-					sm.insert(user);
 					
 					break;
 			}
