@@ -1,19 +1,17 @@
 package modelo;
 
-public class libro {
+public class Libro {
 	private int id;
 	private String titulo;
 	private String autor;
 	
 	
-	public libro(int id, String titulo, String autor) {
-		super();
-		this.id = id;
-		this.titulo = titulo;
-		this.autor = autor;
-		
-	}
+
 	
+	public Libro() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void mostrarInfo(){
 		System.out.println("id: "+ this.id
 				+ " titulo: " + this.titulo
@@ -43,6 +41,11 @@ public class libro {
 
 	public void setAutor(String autor) {
 		this.autor = autor;
+	}
+
+	public void add(Libro libro) {
+		// TODO Auto-generated method stub
+		
 	}
 
 

@@ -11,11 +11,11 @@ public class Conector {
 	 * 
 	 * @param dbIzena datu basearen izena
 	 */
-	Conector(String dbIzena) {
+	Conector(String bbdd) {
 		
 			try {
 				Class.forName("com.mysql.jdbc.Driver");
-				this.conexion = DriverManager.getConnection("jdbc:mysql://localhost/" + dbIzena, "root", "");
+				this.conexion = DriverManager.getConnection("jdbc:mysql://localhost/" + bbdd, "root", "");
 			} catch (ClassNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
